@@ -1,6 +1,29 @@
 /* Add Google fonts below */
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] {
+        -webkit-appearance: none;
+        margin: 0;
+        -moz-appearance: textfield !important;
+    }
+}
+
+@layer components {
+    .input-heading {
+        @apply font-bold text-[#5E7A7D]
+    }
+
+    .input-text, .select-option {
+        @apply font-bold text-[24px]
+    }
+
+
+}

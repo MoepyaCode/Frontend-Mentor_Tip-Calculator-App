@@ -8,7 +8,11 @@ export default {
     backgroundColor: theme => ({
       ...theme('colors'),
     }),
-    extend: {},
+    extend: {
+      fontFamily: {
+        'space-mono': ['Space Mono', 'monospace'],
+      }
+    },
   },
   plugins: [],
 }
