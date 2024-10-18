@@ -9,7 +9,7 @@ export default function Home() {
   )
 
   return (
-    <Main className="font-space-mono bg-[#C5E4E7] flex flex-col items-center pt-[50px] gap-10">
+    <Main className="font-space-mono bg-[#C5E4E7] flex flex-col items-center pt-[50px] gap-10 md:justify-center md:p-0">
       {renderLogo()}
       <TipCalculator />
     </Main>

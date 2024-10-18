@@ -2,10 +2,12 @@ import { Wrapper } from '@app-components'
 
 type Props = {
     title: string
+    isValid: boolean
+    amount: number
 }
 
 export default function AmountOutput(props: Props) {
-    const { title } = props
+    const { title, amount, isValid } = props
 
     return (
         <Wrapper className='flex justify-between items-center'>
@@ -15,7 +17,7 @@ export default function AmountOutput(props: Props) {
             </Wrapper>
 
             <span className='font-bold text-[32px] -tracking-[0.67px] text-[#26C2AE]'>
-                $0.00
+                {isValid ? `$${amount}` : '$0.00'}
             </span>
         </Wrapper>
     )
